@@ -2,26 +2,29 @@
 
 <section>
   		<div class="container">
-  			<h1 class="text-3">ПАКЕТЫ УСЛУГ</h1>
+  			<h1 class="text-3" style = "font-family:'Comfortaa Regular' ">ПАКЕТЫ УСЛУГ</h1>
   			<div class="row justify-content-center">
-  				<div class="card product_card" style="width: 18rem; background-color: #cd7f32;">
+  				<div class="card product_card" style="width: 18rem; background-color:mistyrose;">
 				  <div class="card-body">
-				    <h5 class="card-title">BRONZE</h5>
-				    <p class="card-text">{{ pc_1.description }}</p>
+				    <h5 class="card-title" style = "font-family:'Comfortaa Regular' ">Окрашивание волос</h5>
+				    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Окрашивание в 1 тон крем-краской «SOCOLOR.beauty»</p>
+                    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Тонирование крем-краской без аммиака «COLOR Sync»</p>
 				    <h3>{{ pc_1 }} руб.</h3>
 				  </div>
 				</div>
-				<div class="card product_card" style="width: 18rem; background-color: #c0c0c0;">
+				<div class="card product_card" style="width: 18rem; background-color:mistyrose;">
 				  <div class="card-body">
-				    <h5 class="card-title">SILVER</h5>
-				    <p class="card-text">{{ pc_2.description }}</p>
+				    <h5 class="card-title" style = "font-family:'Comfortaa Regular' ">Перманентный макияж</h5>
+				    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Микроблейдинг бровей</p>
+                    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Перманентный макияж татуаж губ</p>
+                    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Перманентный макияж стрелка</p>
 				    <h3>{{ pc_2}} руб.</h3>
 				  </div>
 				</div>
-				<div class="card product_card" style="width: 18rem; background-color: #ffd700;">
+				<div class="card product_card" style="width: 18rem; background-color: mistyrose;">
 				  <div class="card-body">
-				    <h5 class="card-title">GOLD</h5>
-				    <p class="card-text">{{ pc_3.description }}</p>
+				    <h5 class="card-title" style = "font-family:'Comfortaa Regular' ">Ноготочки</h5>
+				    <p class="card-text" style = "font-family:'Comfortaa Regular' ">Все виды маникюра и покрытий, ногтевой дизайн, наращивание и многое другое</p>
 				    <h3>{{ pc_3}} руб.</h3>
 				  </div>
 				</div>
@@ -31,21 +34,21 @@
 <!-- Таблица -->
   	<section>
   		<div class="container">
-  			<h1 class="text-3">Цены на услуги</h1>
+  			<h1 class="text-3" style = "font-family:'Comfortaa Regular' ">Цены на услуги</h1>
   			<table class="table table_one">
 			  <thead class="thead-dark">
 			    <tr>
-			      <th scope="col">Услуга</th>
-			      <th scope="col">Старая цена</th>
-			      <th scope="col">Новая цена</th>
+			      <th scope="col" style = "font-family:'Comfortaa Regular' ">Услуга</th>
+			      <th scope="col" style = "font-family:'Comfortaa Regular' ">Старая цена</th>
+			      <th scope="col" style = "font-family:'Comfortaa Regular' ">Новая цена</th>
 			    </tr>
 			  </thead>
 			  <tbody>
               {% for price in price_table %}
 			    <tr>
-			      <td>{{ price.pricecard_title }}</td>
-			      <td><del>{{ price.pricecard_old }}</del></td>
-			      <td>{{ price.pricecard_new }}</td>
+			      <td style = "font-family:'Comfortaa Regular' ">{{ price.pricecard_title }}</td>
+			      <td style = "font-family:'Comfortaa Regular' "><del>{{ price.pricecard_old }}</del></td>
+			      <td style = "font-family:'Comfortaa Regular' ">{{ price.pricecard_new }}</td>
 			    </tr>
               {% endfor %}
 
